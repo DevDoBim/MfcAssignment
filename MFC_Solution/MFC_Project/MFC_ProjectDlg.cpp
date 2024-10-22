@@ -295,6 +295,11 @@ bool CMFC_ProjectDlg::inCircle(int x, int y, int CenterX, int CenterY, int radiu
 
 void CMFC_ProjectDlg::OnBnClickedBtnAction()
 {
+	if (m_nStartX == 0 || m_nStartY == 0 || m_nEndX == 0 || m_nEndY == 0)
+	{
+		AfxMessageBox(_T("입력값이 없습니다."));
+		return;
+	}
 	UpdateData(TRUE);
 	moveCircle();
 }
