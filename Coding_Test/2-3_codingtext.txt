@@ -1,0 +1,25 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(vector<string> order) 
+{
+    int price = 0;
+    
+    for(int i = 0; i < order.size(); ++i)
+    {
+        size_t str = order[i].find("cafelatte");
+        
+        if(str != string::npos)
+        {
+            price += 5000;
+        }
+        else
+        {
+            price += 4500;
+        }
+    }
+    
+    return price;
+}

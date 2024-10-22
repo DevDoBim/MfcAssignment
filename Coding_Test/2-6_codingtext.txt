@@ -1,0 +1,46 @@
+#include <string>
+
+using namespace std;
+
+int solution(string s) 
+{
+    int sum = 0;
+    string str = "";
+    
+    for(int i = 0; i < s.length(); i++)
+    {
+        if(s[i] == ' ')
+        {
+            if(!str.empty())
+            {
+                sum += stoi(str);
+            }
+            
+            if(i + 1 < s.length() && s[i + 1] != 'Z')
+            {
+                str = "";
+            }  
+        }
+        
+        else if(s[i] == 'Z')
+        {
+            if(!str.empty())
+            {
+                sum -= stoi(str);
+            }            
+            str = "";
+        }
+        else
+        {
+            str += s[i];
+        }
+    }
+    
+    if(!str.empty())
+    {
+        sum += stoi(str);
+    }
+    
+    return sum;
+}
+

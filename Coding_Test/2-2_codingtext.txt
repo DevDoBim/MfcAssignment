@@ -1,0 +1,17 @@
+#include <string>
+
+using namespace std;
+
+int solution(string my_string, string is_prefix) 
+{
+    size_t prefix = my_string.find(is_prefix);
+    
+    if(prefix != string::npos && prefix == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}

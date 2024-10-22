@@ -1,0 +1,22 @@
+#include <string>
+
+using namespace std;
+
+int solution(int a, int b) 
+{
+    string number_a = to_string(a);
+    string number_b = to_string(b);
+    
+    string temp = number_a;
+    string sum_ab = number_a.append(number_b);
+    string sum_ba = number_b.append(temp);
+    
+    if(stoi(sum_ab) > stoi(sum_ba))
+    {
+        return stoi(sum_ab);
+    }
+    else
+    {
+        return stoi(sum_ba);
+    }
+}
