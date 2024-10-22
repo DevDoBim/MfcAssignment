@@ -385,7 +385,7 @@ void CMFC_ProjectDlg::setDirect()
 	GetCurrentDirectory(MAX_PATH, currentDir.GetBuffer(MAX_PATH));
 	currentDir.ReleaseBuffer();
 
-	CString relativePath = _T("\\res\\save\\");
+	CString relativePath = _T("\\res\\");
 
 	m_strPath = currentDir + relativePath;
 }
