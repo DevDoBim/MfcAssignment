@@ -1,5 +1,4 @@
 *.VC.*
 x64/
 ipch/
-*.txt*
 *.bmp*
