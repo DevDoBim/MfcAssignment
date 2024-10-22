@@ -1,6 +1,5 @@
-﻿  stdafx.cpp
-  MFC_ProjectDlg.cpp
-  MFC_Project.cpp
-  Generating Code...
-  MFC_Project.vcxproj -> c:\users\dobim\documents\visual studio 2015\Projects\MFC_Solution\Debug\MFC_Project.exe
-  MFC_Project.vcxproj -> c:\users\dobim\documents\visual studio 2015\Projects\MFC_Solution\Debug\MFC_Project.pdb (Partial PDB)
+﻿  MFC_ProjectDlg.cpp
+c:\users\dobim\documents\visual studio 2015\projects\mfcassignment\mfc_solution\mfc_project\mfc_projectdlg.cpp(203): warning C4267: '=': conversion from 'size_t' to 'BYTE', possible loss of data
+MFC_ProjectDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStratup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+  MFC_Project.vcxproj -> C:\Users\DoBim\Documents\Visual Studio 2015\Projects\MfcAssignment\MFC_Solution\Debug\MFC_Project.exe
+  MFC_Project.vcxproj -> C:\Users\DoBim\Documents\Visual Studio 2015\Projects\MfcAssignment\MFC_Solution\Debug\MFC_Project.pdb (Partial PDB)
